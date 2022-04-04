@@ -1,0 +1,9 @@
+<% flash.each do |type, msg| %>
+  <div>
+    <%= msg %>
+  </div>
+<% end %>
+<%= link_to "Quiz", quiz_path(@quiz), class: 'quiz-link' %>
+<%if current_user.results.any?%>
+  <p>grade: <%= current_user.results.last.grade %></p>
+<%end%>

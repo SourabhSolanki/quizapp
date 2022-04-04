@@ -1,0 +1,27 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root {
+    font-size: 16px;
+    font-family: 'Raleway';
+    --unattempted-bg-color: #04B50E;
+    --completed-bg-color:#7B7B7B;
+}
+body {
+    width: 100vw;
+    height: 100vh;
+}
+.view {
+    width: 80%;
+    padding-top: 50px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+#user-greeting {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
